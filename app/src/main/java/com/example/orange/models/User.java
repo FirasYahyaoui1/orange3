@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class User {
     @SerializedName("Id")
-    long  id;
+    int  id;
     @SerializedName("Email")
     String email;
     @SerializedName("FName")
@@ -12,7 +12,7 @@ public class User {
     @SerializedName("LName")
     String last_name;
     @SerializedName("Age")
-    int age;
+    String age;
 
     @Override
     public String toString() {
@@ -35,7 +35,7 @@ public class User {
 
     public User(){}
 
-    public User(long id, String email, String first_name, String last_name, int age, String country, String phone_number) {
+    public User(int id, String email, String first_name, String last_name, String age, String country, String phone_number) {
         this.id = id;
         this.email = email;
         this.first_name = first_name;
@@ -45,11 +45,11 @@ public class User {
         this.phone_number = phone_number;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -77,11 +77,11 @@ public class User {
         this.last_name = last_name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
