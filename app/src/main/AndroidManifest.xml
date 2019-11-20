@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ListActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".sign_up" />
         <activity android:name=".Get_user" />
         <activity android:name=".Lister" />
-        <activity android:name=".DeleteUser"/>
+        <activity android:name=".DeleteUser" />
         <activity android:name=".Update_User">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
