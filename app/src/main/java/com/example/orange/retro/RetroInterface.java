@@ -1,6 +1,6 @@
-package retro;
+package com.example.orange.retro;
 
-import models.User;
+import com.example.orange.models.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
@@ -12,13 +12,12 @@ import retrofit2.http.Path;
 
 public interface RetroInterface {
     //get users
-    @GET("api/Users1")
+    @GET("api/Users1/{id}")
     public Call<User> getUserById(@Path("id") int id);
     //delete User by Id
     @DELETE("api/Users1/{id}")
     public Call<User> deleteUserById(@Path("id") int id);
     //add Users
-    @FormUrlEncoded
     @POST("api/Users1")
     public Call<User> addUser(@Body User user);
     //update User

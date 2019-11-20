@@ -1,4 +1,4 @@
-package models;
+package com.example.orange.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -13,6 +13,20 @@ public class User {
     String last_name;
     @SerializedName("Age")
     int age;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", age=" + age +
+                ", country='" + country + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                '}';
+    }
+
     @SerializedName("Country")
     String country;
     @SerializedName("PhoneNumber")
