@@ -28,6 +28,8 @@ public class RecycleAdaptater extends RecyclerView.Adapter<UserViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         User user=userList.get(position);
+        holder.email.setText(user.getEmail());
+        holder.name.setText(user.getFirst_name());
 
 
 
